@@ -1,12 +1,15 @@
-# BackEnd do Projeto 
+# FrontEnd do Projeto 
 
 
 # Sobre o projeto
 
-O projeto consiste em uma aplicação com ReactJs, onde de inicio .
+O projeto consiste em uma aplicação com ReactJs, onde de inicio foi criado um hook onde centralizo todas as chamadas as APIs e um componente que valida se o usuário está autorizado a entrar ou não na página principal, caso não ele retorna a página de login.
 
-Inicialmente foi feita a configuração do servidor com o Framework Express no arquivo 'server.ts'. Logo após fiz a conexão com o banco de dados por meio de uma ORM chamada Sequelize, onde foram colocadas todas as variáveis de ambiente no arquivo ".env" e instanciadas na pasta "instances".
-Feito o Model do banco, foram criadas os Endpoints da aplicação na pasta "Routers" utilizando o próprio recurso do express "Router".
+Para a parte de autorização e autenticação foi feito um context onde ele envia ao hook useApi a chamada e caso o usuário exista é setado nos states as informações do usuário (token e dados do user). Na página de login, quando inserido os campos necessários, é enviado uma request ao hook onde retorna o status do usuário, caso seja true, ele redireciona para a página home. Em paralelo é feita uma chamada para o context de autorização, para serem setados os valores de usuário e token em state e localstorage respectivamente.
+
+Para a requisição dos itens
+
+
 
 # EndPoints
 
