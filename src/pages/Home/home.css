@@ -1,0 +1,131 @@
+.section {
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section h1 {
+  padding: 100px 0px;
+  font-size: 50px;
+}
+.section .beersArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section .beersArea .beer {
+  height: 500px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background: #f9f9f9;
+}
+.section .beersArea .beer .beerImgHome {
+  width: 80px;
+  height: 50%;
+}
+.section .beersArea .beer .beerImgHome img {
+  width: 80px;
+  height: 250px;
+}
+.section .beersArea .beer .beerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.section .beersArea .beer .beerInfo span {
+  font-size: 18px;
+}
+.section .beersArea .beer .beerInfo .beerName {
+  font-weight: bold;
+}
+.section .beersArea .beer .beerInfo .moreIformation {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #005B62;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  color: #FFF;
+  font-size: 18px;
+}
+.section .beersArea .paginationArea {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+.section .beersArea .paginationArea .firstPage {
+  padding: 10px;
+  background-color: #005B62;
+  color: #FFF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.section .beersArea .paginationArea .iconAreaPagination {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-around;
+}
+.section .beersArea .paginationArea .iconAreaPagination .previousPage {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.section .beersArea .paginationArea .iconAreaPagination .previousPage svg {
+  height: 40px;
+  width: 40px;
+}
+.section .beersArea .paginationArea .iconAreaPagination .currentPage {
+  font-size: 18px;
+  font-weight: bold;
+}
+.section .beersArea .paginationArea .iconAreaPagination .nextPage {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.section .beersArea .paginationArea .iconAreaPagination .nextPage svg {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 950px) {
+  .section {
+    margin-left: 0px;
+  }
+  .section h1 {
+    padding: 50px 0px;
+  }
+  .section .beersArea {
+    justify-content: center;
+  }
+  .section .beersArea .beer {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .section .beersArea .paginationArea .iconAreaPagination {
+    width: 30%;
+    justify-content: space-between;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

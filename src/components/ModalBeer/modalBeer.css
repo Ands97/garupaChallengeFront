@@ -1,0 +1,114 @@
+.modalBeer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Poppins", sans-serif;
+}
+.modalBeer .modalBox {
+  width: 50%;
+  height: 90%;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 5px;
+}
+.modalBeer .modalBox .closeIcon {
+  cursor: pointer;
+  width: 40px;
+}
+.modalBeer .modalBox .closeIcon svg {
+  width: 40px;
+  height: 40px;
+}
+.modalBeer .modalBox .beerModalItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow: auto;
+}
+.modalBeer .modalBox .beerModalItem .beerImage {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalBeer .modalBox .beerModalItem .beerImage img {
+  width: 100px;
+}
+.modalBeer .modalBox .beerModalItem .beerInfoArea {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalBeer .modalBox .beerModalItem .beerInfoArea .beerInfo {
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.modalBeer .modalBox .beerModalItem .beerInfoArea .beerInfo .beerName {
+  font-weight: bold;
+}
+.modalBeer .modalBox .beerModalItem .beerInfoArea .beerInfo ul {
+  margin-left: 20px;
+}
+.modalBeer .modalBox .beerModalItem .beerInfoArea .beerInfo ul li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+.modalBeer .modalBox .loaderPosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.modalBeer .modalBox .loaderPosition .loader {
+  animation: is-rotating 1s infinite;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 6px solid #e5e5e5;
+  border-top-color: #00645A;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@media screen and (max-width: 800px) {
+  .modalBeer .modalBox {
+    width: 80%;
+  }
+  .modalBeer .modalBox .beerModalItem {
+    display: grid;
+    grid-template-columns: 80%;
+  }
+  .modalBeer .modalBox .beerModalItem .beerImage {
+    width: 100%;
+  }
+  .modalBeer .modalBox .beerModalItem .beerImage img {
+    width: auto;
+    height: 300px;
+  }
+  .modalBeer .modalBox .beerModalItem .beerInfoArea {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=modalBeer.css.map */

@@ -1,0 +1,142 @@
+.loginArea {
+  background-color: #2F4858;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginArea .loginBox {
+  width: 80%;
+  height: 80%;
+  background-color: #000000;
+  border-radius: 18px;
+  color: #FFF;
+}
+.loginArea .loginBox figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(to top right, #000000, 80%, transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 18px;
+}
+.loginArea .loginBox figure .loaderPosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 150px;
+}
+.loginArea .loginBox figure .loaderPosition .loader {
+  animation: is-rotating 1s infinite;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 6px solid #e5e5e5;
+  border-top-color: #00645A;
+}
+.loginArea .loginBox figure .imgBeers {
+  opacity: 0.07;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.loginArea .loginBox figure h1 {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.loginArea .loginBox figure form {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+.loginArea .loginBox figure form .input {
+  height: 50px;
+  width: 100%;
+  padding: 5px 5px;
+  margin-top: 20px;
+  position: relative;
+  background-color: #2F4858;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.loginArea .loginBox figure form .input input:focus ~ label, .loginArea .loginBox figure form .input input:valid ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+}
+.loginArea .loginBox figure form .input .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 30px;
+}
+.loginArea .loginBox figure form .input input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}
+.loginArea .loginBox figure form .input label {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  font-size: 18px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #FFF;
+}
+.loginArea .loginBox figure form .button {
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px;
+  background-color: #005B62;
+  padding: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@media screen and (max-width: 500px) {
+  .loginArea .loginBox {
+    height: 400px;
+  }
+  .loginArea .loginBox figure {
+    justify-content: center;
+    align-items: center;
+  }
+  .loginArea .loginBox figure h1 {
+    margin: 0;
+  }
+  .loginArea .loginBox figure form {
+    width: 80%;
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */
