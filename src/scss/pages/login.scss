@@ -129,9 +129,16 @@
     .loginArea{
         .loginBox{
             height: 400px;
+            display: flex;
             figure{
                 justify-content: center;
                 align-items: center;
+                .loaderPosition{
+                   display: block;
+                   margin-left: 0;
+                   margin-right: 0;
+                   margin-top: 50%;
+                }
                 h1{
                     margin: 0;
                 }

@@ -9,6 +9,7 @@
   position: fixed;
   background-color: #2F4858;
   color: #FFF;
+  flex-wrap: wrap;
 }
 .header .menu {
   margin-top: 30px;
