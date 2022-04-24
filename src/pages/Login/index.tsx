@@ -25,16 +25,15 @@ export const Login = () => {
         if (email && password) {
             setShowLoading(true);
             const res = await api.signin(email, password);
-            const isLogged = await auth.signin(email, password);
+            await auth.signin(email, password);
             setShowLoading(false);
-            console.log(res.status);
             if (res.status) {
                 navigate("/home");
             } else {
-                if (res.message === "Senha incorreta") {
+                if (res.message === "Incorrect password") {
                     setMessagePassword(true);
                     setMessageEmail(false);
-                } else if (res.message === "Usuário inexistente") {
+                } else if (res.message === "User not found") {
                     setMessageEmail(true);
                     setMessagePassword(false);
                 }
