@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:4000/api",
+    baseURL: "http://54.232.200.77:4000/api",
 });
 
 const punk = axios.create({
